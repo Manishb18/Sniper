@@ -19,8 +19,6 @@ app.use('/', redirectRoutes);
 app.use('/api', urlRoutes);
 app.use('/api/auth', authRoutes);
 
-console.log(process.env.MONGO_URI);
-
 const uri = process.env.MONGO_URI || "";
 
 mongoose.connect(uri)
