@@ -14,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "URL Shortener",
+  title: "Sniper | URL Shortener",
   description: "Simplify your links with our easy-to-use URL shortener",
 };
 
