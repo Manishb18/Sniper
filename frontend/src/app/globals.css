@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  /* Modern color palette */
+  --primary: #6366f1;      /* Indigo */
+  --primary-light: #818cf8;
+  --secondary: #10b981;    /* Emerald */
+  --accent: #8b5cf6;       /* Violet */
+  --background: #ffffff;
+  --card-bg: #f8fafc;
+  --foreground: #171717;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  
+  /* Font variables */
+  --font-sora: var(--font-sora);
+  --font-space-grotesk: var(--font-space-grotesk);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sora);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #818cf8;     /* Lighter Indigo */
+    --primary-light: #a5b4fc;
+    --secondary: #34d399;   /* Lighter Emerald */
+    --accent: #a78bfa;      /* Lighter Violet */
+    --background: #0f172a;  /* Slate 900 */
+    --card-bg: #1e293b;     /* Slate 800 */
+    --foreground: #f1f5f9;  /* Slate 100 */
+    --muted: #94a3b8;       /* Slate 400 */
+    --border: #334155;      /* Slate 700 */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sora), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}

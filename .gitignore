@@ -1,0 +1,75 @@
+# Dependencies
+node_modules/
+*/node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+*/coverage/
+
+# Next.js
+/.next/
+/out/
+/frontend/.next/
+/frontend/out/
+/frontend/build
+/frontend/.vercel
+
+# Production
+/build
+/dist
+*/build
+*/dist
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*/env
+*/.env
+*/.env.local
+*/.env.development.local
+*/.env.test.local
+*/.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# Misc
+.DS_Store
+*.pem
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Package managers
+yarn.lock
+package-lock.json
+**/yarn.lock
+**/package-lock.json
+
+# MongoDB data
+/data/
+*/data/
+
+# Debug
+.debug/
+*/debug/
+
+# Render/Vercel/Netlify
+.vercel
+.netlify
+.render
+
+# Docker (in case you need it again in the future)
+.docker
+docker-compose.override.yml 
